@@ -10,5 +10,4 @@ mv hugo /usr/local/bin/
 apt-get install -y make
 
 # Build the website
-cd /app
 make build
