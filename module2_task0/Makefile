@@ -16,9 +16,4 @@ test: ## Test the application by sending HTTP requests
 	@curl http://localhost:9999/health
 
 help: ## Show this help usage
-	@echo "help: Print a list of all the goals with a sentence each"
-	@echo "build: Compile the source code of the application"
-	@echo "run: Run the application in the background"
-	@echo "stop: Stop the application"
-	@echo "clean: Stop the application and delete binary and log files"
-	@echo "test: Test the application by sending HTTP requests"
+	@awk -F ': ' '/^[^#].*: /{printf "  %-15s%s\n", $$1, $$2}' $(MAKEFILE_LIST)
