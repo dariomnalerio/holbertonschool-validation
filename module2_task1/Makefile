@@ -1,4 +1,4 @@
-lint: ## Fails if linter catches an error
+lint: ## Checks code for linting error
 	@golangci-lint run
 
 build: lint ## Compile the source code of the application
