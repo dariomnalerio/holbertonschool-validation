@@ -1,8 +1,9 @@
 lint: ## Checks code for linting error
 	@golangci-lint run
 
-build: lint ## Compile the source code of the application
-	@go build -o awesome-api || exit 1
+build: ## Compile the source code of the application
+	@make lint
+	@go build -o awesome-api
 
 run: ## Run the application in the background
 	@nohup ./awesome-api >./awesome-api.log 2>&1 &
