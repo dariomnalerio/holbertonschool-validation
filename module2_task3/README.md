@@ -16,4 +16,6 @@ To build and run the project, follow these steps:
    - `clean` - Stops the application and deletes the binary and log files.
    - `test` - Tests the application by sending HTTP requests.
    - `unit-tests` - Execute unit tests
+   - `integration-tests` - Execute integration tests
+   - `test` - Execute all tests
    - `help` - Shows the available targets and their usage.
