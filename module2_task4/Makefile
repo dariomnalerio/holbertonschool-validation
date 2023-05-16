@@ -1,7 +1,7 @@
 lint: ## Checks code for linting error
 	@golangci-lint run
 
-build: lint ## Compile the source code of the application
+build: lint check ## Compile the source code of the application
 	@hugo
 	@go build -o awesome-api
 
@@ -28,7 +28,7 @@ check: ## Fails if markdownlint or markdown-link fail
 	@markdown-link-check ./content/posts/*
 
 validate: ## Prints validator result
-	@./W3C-Validator/w3c_validator.py ./dist/index.html || true
+	@python3 /W3C-Validator/w3c_validator.py ./dist/index.html || true
 
 help: ## Show this help usage
 	@awk -F ': ' '/^[^#].*: /{printf "  %-15s%s\n", $$1, $$2}' $(MAKEFILE_LIST)
