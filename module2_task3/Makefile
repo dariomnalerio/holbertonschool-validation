@@ -11,8 +11,9 @@ run: ## Run the application in the background
 stop: ## Stop the application
 	@pkill awesome-api
 
-clean: stop ## Stop the application and delete binary and log files
-	@rm -rf awesome-api awesome-api.log coverage-units.out coverage-integrations.out
+clean: ##  Delete binary and log files
+		@rm -rf dist
+		@rm -f awesome-api awesome-api.log coverage-units.out coverage-integrations.out
 
 unit-tests: ## Execute unit tests
 	@go test -v -short -coverprofile=coverage-units.out
