@@ -14,10 +14,6 @@ stop: ## Stop the application
 clean: stop ## Stop the application and delete binary and log files
 	@rm -rf awesome-api awesome-api.log coverage-units.out coverage-integrations.out
 
-test: ## Test the application by sending HTTP requests
-	@curl http://localhost:9999
-	@curl http://localhost:9999/health
-
 unit-tests: ## Execute unit tests
 	@go test -v -short -coverprofile=coverage-units.out
 
