@@ -1,15 +1,5 @@
 {
-  "name": "module2_task4",
-  "version": "1.0.0",
-  "description": "To build and run this project, you will need: - Go-Hugo - Make",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "markdown-link-check": "^3.8.6",
-    "markdownlint-cli": "^0.26.0"
+    "markdown-link-check": "^3.11.2"
   }
 }
