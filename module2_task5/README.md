@@ -12,6 +12,7 @@ To build and run the project, follow these steps:
    - `lint` - Checks code for linting error
    - `build` - Checks for linting errors, generates the website and compiles the source code of the application.
    - `run` - Runs the application in the background.
+   - `post` -  Create a new blog post whose filename and title come from the environment variables POST_TITLE and POST_NAME
    - `stop` - Stops the running application.
    - `clean` - Stops the application and deletes the binary and log files.
    - `test` - Tests the application by sending HTTP requests.
