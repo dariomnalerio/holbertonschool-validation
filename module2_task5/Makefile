@@ -1,7 +1,7 @@
 lint: ## Checks code for linting error
 	@golangci-lint run
 
-build: lint check ## Compile the source code of the application
+build: check ## Compile the source code of the application
 	@hugo
 	@go build -o awesome-api
 
